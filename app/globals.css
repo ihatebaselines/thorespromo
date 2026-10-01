@@ -234,4 +234,41 @@
   }
 }
 
+@media (max-width: 720px) {
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 132px;
+    right: -8px;
+    width: 112px;
+    height: 190px;
+    background: url('/assets/botanical-right.png') right top / contain no-repeat;
+    opacity: .23;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .decor-hero-left,
+  .decor-hero-right {
+    display: none;
+  }
+
+  .moon {
+    z-index: 0;
+    top: 46%;
+    right: 7%;
+    left: auto;
+    width: 76px;
+    height: 76px;
+    opacity: .72;
+  }
+
+  .hero-copy {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
 
