@@ -1,6 +1,6 @@
 # Thores promotional site
 
-A responsive Next.js 16 / React 19 landing page for Thores. Motion, GSAP and Lenis handle the entrance, scroll and hover motion; the site respects the reduced-motion preference. There is no server-side data requirement.
+Responsive one-page Next.js 16 / React 19 promotional site for Thores. Motion, GSAP and Lenis handle entrance, scroll and hover motion; the site respects reduced-motion preferences. It has no server-side data requirements and builds as a static export.
 
 ## Develop
 
@@ -9,11 +9,14 @@ npm ci
 npm run dev
 ```
 
-The project is configured for static export to the `out/` folder under the `/thores` path. Pushing to `master` builds and deploys that export to GitHub Pages through the workflow in `.github/workflows/deploy.yml`.
+## Deploy to Cloudflare Pages
 
-The page follows the supplied design reference, uses the supplied botanical and mountain artwork, the public Thores Instagram profile image for the logo, and public introductions linked from each member card. The video section is marked **Coming soon**.
+Connect `ihatebaselines/thores` in **Workers & Pages → Create application → Pages → Connect to Git**. Use `master` as the production branch and set:
 
-See [design-qa.md](design-qa.md) for the implementation review.
+- Framework preset: **Next.js (Static HTML Export)**
+- Build command: `npx next build`
+- Build output directory: `out`
 
-Expected GitHub Pages URL: https://ihatebaselines.github.io/thores/
+Cloudflare will deploy the site to a `*.pages.dev` address and publish future pushes to `master` automatically.
 
+The page follows the supplied design reference, uses the supplied botanical and mountain artwork, the Thores Instagram profile logo, and public introductions linked from each member card. The video section is marked **Coming soon**.
