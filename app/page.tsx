@@ -25,22 +25,21 @@ export default function Home() {
       const context = gsap.context(() => {
         gsap.fromTo(
           ".hero-copy > *",
-          { autoAlpha: 0, y: 22 },
-          { autoAlpha: 1, y: 0, duration: 0.85, stagger: 0.12, delay: 0.2, ease: "power3.out" },
+          { y: 22 },
+          { y: 0, duration: 0.85, stagger: 0.12, delay: 0.2, ease: "power3.out" },
         );
         gsap.fromTo(
           ".phone-image",
-          { autoAlpha: 0, y: 30, rotate: 2 },
-          { autoAlpha: 1, y: 0, rotate: 0, duration: 1.2, delay: 0.45, ease: "power3.out" },
+          { y: 30, rotate: 2 },
+          { y: 0, rotate: 0, duration: 1.2, delay: 0.45, ease: "power3.out" },
         );
         gsap.to(".moon", { rotate: 360, duration: 90, repeat: -1, ease: "none" });
 
         gsap.utils.toArray<HTMLElement>(".story, .project, .steps, .team, .journey").forEach((section) => {
           gsap.fromTo(
             section,
-            { autoAlpha: 0, y: 28 },
+            { y: 28 },
             {
-              autoAlpha: 1,
               y: 0,
               duration: 0.8,
               ease: "power2.out",
@@ -51,9 +50,8 @@ export default function Home() {
         gsap.utils.toArray<HTMLElement>(".feature-card, .step-grid li, .member-card").forEach((card) => {
           gsap.fromTo(
             card,
-            { autoAlpha: 0, y: 18 },
+            { y: 18 },
             {
-              autoAlpha: 1,
               y: 0,
               duration: 0.55,
               ease: "power2.out",
