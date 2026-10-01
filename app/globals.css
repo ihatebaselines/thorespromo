@@ -83,4 +83,155 @@
 .coming-soon-panel span{font:500 clamp(42px,6.2vw,78px)/.95 var(--serif);letter-spacing:-.065em}
 @media(max-width:720px){.coming-soon-panel{min-height:190px;aspect-ratio:1.55/1}.coming-soon-panel span{font-size:clamp(40px,11vw,58px)}}
 
+/* Responsive refinements for tablet and compact mobile layouts. */
+@media (min-width: 721px) and (max-width: 920px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.1fr) minmax(230px, .9fr);
+    gap: 12px;
+    padding-inline: 3%;
+  }
+
+  .hero h1 {
+    font-size: clamp(54px, 7.1vw, 68px);
+  }
+
+  .phone-image {
+    width: min(190px, 82%);
+  }
+
+  .step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 24px;
+  }
+
+  .step-grid li:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    padding-inline: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .main-nav {
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+
+  .hero-copy,
+  .story-copy,
+  .journey-copy {
+    width: 100%;
+  }
+
+  .hero h1 {
+    max-width: 11ch;
+    font-size: clamp(48px, 11.6vw, 70px);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions .button {
+    min-height: 44px;
+  }
+
+  .phone-wrap {
+    min-height: clamp(300px, 92vw, 390px);
+  }
+
+  .story {
+    gap: 22px;
+  }
+
+  .coming-soon-panel {
+    min-height: 0;
+    aspect-ratio: 1.45 / 1;
+  }
+
+  .feature-card {
+    padding-inline: clamp(16px, 7vw, 28px);
+  }
+
+  .step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .step-grid li {
+    min-width: 0;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .member-info > a {
+    gap: 5px;
+  }
+
+  .journey {
+    overflow: hidden;
+  }
+
+  .journey-mountains {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-shell {
+    width: calc(100% - 32px);
+  }
+
+  .hero {
+    padding-inline: 2px;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 11.2vw, 52px);
+  }
+
+  .hero-actions {
+    gap: 8px;
+  }
+
+  .hero-actions .button {
+    padding-inline: 12px;
+    font-size: 10px;
+  }
+
+  .phone-wrap > .hand-note {
+    right: 0;
+    max-width: 86px;
+    font-size: 13px;
+  }
+
+  .team {
+    width: calc(100% - 20px);
+    padding-inline: 12px;
+  }
+
+  .team-grid {
+    gap: 8px;
+  }
+
+  .member-info {
+    padding: 10px 8px 12px;
+  }
+
+  .member-info h3 {
+    font-size: clamp(16px, 4.5vw, 19px);
+  }
+
+  .member-info > a {
+    min-height: 34px;
+    font-size: 7px;
+  }
+
+  .site-footer {
+    padding-inline: 18px;
+    padding-bottom: max(62px, calc(env(safe-area-inset-bottom) + 42px));
+  }
+}
+
 
