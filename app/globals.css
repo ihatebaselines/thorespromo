@@ -178,6 +178,38 @@
   }
 }
 
+@media (min-width: 721px) {
+  .hero-copy {
+    max-width: 700px;
+  }
+
+  .hero h1 {
+    font-size: clamp(62px, 5.2vw, 84px);
+  }
+
+  .decor-hero-left {
+    width: clamp(250px, 25vw, 390px);
+    height: clamp(310px, 38vw, 500px);
+    left: 0;
+    top: 0;
+    object-fit: contain;
+    object-position: left top;
+    opacity: .28;
+    z-index: 0;
+  }
+
+  .decor-hero-right {
+    width: clamp(210px, 22vw, 340px);
+    height: clamp(270px, 34vw, 440px);
+    right: 0;
+    top: 12px;
+    object-fit: contain;
+    object-position: right top;
+    opacity: .24;
+    z-index: 0;
+  }
+}
+
 @media (max-width: 420px) {
   .section-shell {
     width: calc(100% - 32px);
@@ -238,12 +270,12 @@
   .hero::before {
     content: "";
     position: absolute;
-    top: 132px;
-    right: -8px;
-    width: 112px;
-    height: 190px;
-    background: url('/assets/botanical-right.png') right top / contain no-repeat;
-    opacity: .23;
+    top: 145px;
+    right: 0;
+    width: 140px;
+    height: 205px;
+    background: url('/assets/botanical-frame-right.png') right top / contain no-repeat;
+    opacity: .18;
     pointer-events: none;
     z-index: 0;
   }

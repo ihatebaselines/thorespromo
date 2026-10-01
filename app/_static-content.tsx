@@ -14,7 +14,7 @@ export default function StaticContent() {
   </header>
   <main>
     <section className="hero section-shell" id="home">
-      <img className="decor decor-hero-left" src="/assets/botanical-edge-left.png" alt="" /><img className="decor decor-hero-right" src="/assets/botanical-edge-right.png" alt="" /><img className="moon" src="/assets/moon-stars-art.png" alt="" /><img className="breathing-signal" src="/assets/breathing-signal.png" alt="" />
+      <img className="decor decor-hero-left" src="/assets/botanical-frame-left.png" alt="" /><img className="decor decor-hero-right" src="/assets/botanical-frame-right.png" alt="" /><img className="moon" src="/assets/moon-stars-art.png" alt="" /><img className="breathing-signal" src="/assets/breathing-signal.png" alt="" />
       <div className="hero-copy"><p className="eyebrow">Every breath matters</p><h1>Understand<br />your breathing,<br /><em>know your night.</em></h1><p className="lead">Thores is a student-built prototype exploring how your breathing during sleep can help you understand your patterns and wake up to clearer insights.</p><div className="hero-actions"><a className="button button-dark" href="#film">Coming soon <span>↘</span></a><a className="button button-outline" href="#project">Explore the project <span>↓</span></a></div></div>
       <div className="phone-wrap"><img className="phone-image" src="/assets/app-phone.jpg" alt="Thores sleep insights app shown on a phone" /><p className="hand-note">Every breath<br />matters.</p></div>
       <div className="mountain-band"><img src="/assets/mountain-ridge.png" alt="" /></div>
