@@ -210,6 +210,26 @@
   }
 }
 
+.journey-mountains {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  max-height: 440px;
+  justify-self: center;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+  .journey-mountains {
+    content: normal;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    max-height: none;
+    justify-self: center;
+  }
+}
+
 @media (max-width: 420px) {
   .section-shell {
     width: calc(100% - 32px);
