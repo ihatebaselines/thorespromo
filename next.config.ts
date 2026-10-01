@@ -3,10 +3,11 @@ import path from "node:path";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/thorespromo",
-  assetPrefix: "/thorespromo/",
+  basePath: "/thores",
+  assetPrefix: "/thores/",
   images: { unoptimized: true },
   turbopack: { root: path.resolve(process.cwd()) },
 };
 
 export default nextConfig;
+
