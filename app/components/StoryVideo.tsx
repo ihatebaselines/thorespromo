@@ -60,7 +60,6 @@ export default function StoryVideo() {
           ref={videoRef}
           className="story-video-media"
           src="/assets/thores-story.mp4"
-          poster="/assets/story-video.jpg"
           muted
           loop
           playsInline
