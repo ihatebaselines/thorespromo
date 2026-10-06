@@ -323,4 +323,21 @@
   }
 }
 
+#film{min-width:0}
+.story-video{position:relative;width:100%;aspect-ratio:2.65/1;min-height:220px;overflow:hidden;border-radius:8px;background:#0b1a33;box-shadow:0 18px 36px #10274a35}
+.story-video-toggle{position:absolute;inset:0;display:block;width:100%;height:100%;padding:0;overflow:hidden;border:0;background:#0b1a33;color:#fff8ec;text-align:left;cursor:pointer}
+.story-video-toggle:focus-visible{outline:3px solid #70d8d3;outline-offset:-5px}
+.story-video-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.72);transform:scale(1.01);transition:filter .45s ease,transform .75s cubic-bezier(.2,.8,.2,1)}
+.story-video.is-playing .story-video-media{filter:grayscale(0) brightness(.92);transform:scale(1.035)}
+.story-video-shade{position:absolute;inset:0;background:linear-gradient(0deg,#08172ddd,transparent 46%,#08172a44);pointer-events:none;transition:background .4s ease}
+.story-video.is-idle .story-video-shade{background:linear-gradient(0deg,#08172dbb,#10274a20 48%,#08172a30)}
+.story-video-play{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:66px;height:66px;padding-left:3px;border:1.5px solid #fff;border-radius:50%;color:#fff;font:500 23px/1 var(--sans);transform:translate(-50%,-50%);transition:opacity .25s,background .25s}
+.story-video.is-playing .story-video-play{opacity:.86;background:#06132755}
+.story-video-hint{position:absolute;left:50%;top:calc(50% + 49px);color:#fff;font-size:9px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;opacity:0;transform:translate(-50%,5px);transition:opacity .25s,transform .25s}
+.story-video.is-idle .story-video-toggle:hover .story-video-hint,.story-video-toggle:focus-visible .story-video-hint{opacity:.9;transform:translate(-50%,0)}
+.story-video-caption{position:absolute;right:0;bottom:0;left:0;display:flex;justify-content:space-between;gap:12px;padding:11px 15px;color:#fff;font-size:9px;letter-spacing:.13em;pointer-events:none}
+.story-youtube-link{position:absolute;top:13px;right:13px;z-index:1;padding:7px 11px;border:1px solid #ffffff8c;border-radius:999px;background:#0b1a33c9;color:#fff;font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;transition:background .2s,color .2s}
+.story-youtube-link:hover,.story-youtube-link:focus-visible{background:#70d8d3;color:#08172a}
+@media(max-width:720px){.story-video{aspect-ratio:1.55/1;min-height:190px}.story-youtube-link{top:10px;right:10px}.story-video-caption{font-size:8px;padding:10px 12px}}
+
 

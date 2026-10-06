@@ -1,3 +1,5 @@
+import StoryVideo from "./components/StoryVideo";
+
 export default function StaticContent() {
   const memberProfiles = [
     { name: "Ian Ștefan-Cazacu", role: "AI & Development", poster: "/assets/team-ian-profile.jpg", bio: "Hi, I'm Ian. I'm passionate about artificial intelligence, competitive programming, and building practical AI projects. I enjoy solving challenging problems, learning new technologies, and creating intelligent applications that turn ideas into real-world solutions.", instagram: "https://www.instagram.com/thoresdpit/p/DbRTBmOCJwb/" },
@@ -19,7 +21,7 @@ export default function StaticContent() {
       <div className="phone-wrap"><img className="phone-image" src="/assets/app-phone.jpg" alt="Thores sleep insights app shown on a phone" /><p className="hand-note">Every breath<br />matters.</p></div>
       <div className="mountain-band"><img src="/assets/mountain-ridge.png" alt="" /></div>
     </section>
-    <section className="story section-shell" id="story"><div className="coming-soon-panel" id="film"><span>Coming soon</span></div><div className="story-copy"><p className="eyebrow">A thoughtful idea, built together</p><h2>Our story<br />in 60 seconds.</h2><span className="short-rule"></span><p>Meet Thores — a team of high school students turning curiosity into a real technology prototype. This is the story of our idea, our journey and the people behind it.</p><a className="text-link" href="#team">Meet the team <span aria-hidden="true">↓</span></a></div></section>
+    <section className="story section-shell" id="story"><div id="film"><StoryVideo /></div><div className="story-copy"><p className="eyebrow">A thoughtful idea, built together</p><h2>Our story<br />in 60 seconds.</h2><span className="short-rule"></span><p>Meet Thores — a team of high school students turning curiosity into a real technology prototype. This is the story of our idea, our journey and the people behind it.</p><a className="text-link" href="#team">Meet the team <span aria-hidden="true">↓</span></a></div></section>
     <section className="project section-shell" id="project"><div className="section-heading"><span></span><img src="/assets/thores-logo.jpg" alt="" /><span></span><p className="eyebrow">Turning breathing data into meaningful insights</p><h2>What Thores does</h2></div><div className="feature-grid">
       <article className="feature-card"><div className="feature-symbol">01</div><h3>Breaths per minute</h3><p>Tracks breathing rate during sleep and helps make patterns easier to understand.</p><div className="mini-wave"></div></article>
       <article className="feature-card"><div className="feature-symbol">02</div><h3>Respiratory score</h3><p>A personalized overview built from your breathing patterns throughout the night.</p><div className="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
