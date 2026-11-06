@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://thorespromo.pages.dev"),
   title: {
-    default: "Thores — Every breath matters",
+    default: "Thores - Every breath matters",
     template: "%s | Thores",
   },
   description:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Thores",
-    title: "Thores — Every breath matters",
+    title: "Thores - Every breath matters",
     description:
       "A student-built prototype exploring breathing patterns during sleep and turning them into clearer insights.",
     images: [
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
         url: "/assets/story-video.jpg",
         width: 434,
         height: 219,
-        alt: "A quiet mountain lake at dusk — the story behind Thores.",
+        alt: "A quiet mountain lake at dusk - the story behind Thores.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thores — Every breath matters",
+    title: "Thores - Every breath matters",
     description:
       "A student-built prototype exploring breathing patterns during sleep and turning them into clearer insights.",
     images: ["/assets/story-video.jpg"],

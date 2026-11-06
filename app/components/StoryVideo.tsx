@@ -69,7 +69,7 @@ export default function StoryVideo() {
         <span className="story-video-shade" aria-hidden="true" />
         <span className="story-video-play" aria-hidden="true">{isPlaying ? "Ⅱ" : "▶"}</span>
         <span className="story-video-hint">{pinned ? "Playing · click to pause" : "Hover to preview · click to play"}</span>
-        <span className="story-video-caption"><span>THORES — OUR STORY</span><span>LOOPING FILM</span></span>
+        <span className="story-video-caption"><span>THORES - OUR STORY</span><span>LOOPING FILM</span></span>
       </button>
       <a className="story-youtube-link" href={YOUTUBE_URL} target="_blank" rel="noreferrer">
         YouTube <span aria-hidden="true">↗</span>
